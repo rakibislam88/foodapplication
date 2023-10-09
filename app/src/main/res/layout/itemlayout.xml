@@ -1,25 +1,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="170dp"
+    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_marginRight="15dp"
-    android:layout_marginBottom="10dp"
+    android:layout_margin="10dp"
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="170dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="10dp"
         app:cardCornerRadius="8dp"
-        app:cardBackgroundColor="#191825"
-        app:cardMaxElevation="12dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="false"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@drawable/cardviewshape"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -28,7 +24,7 @@
                 >
                 <ImageView
                     android:id="@+id/item_img"
-                    android:layout_width="170dp"
+                    android:layout_width="match_parent"
                     android:layout_height="120dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/b"
@@ -40,8 +36,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="2"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:padding="10dp"
                     >
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -55,7 +50,6 @@
                             android:layout_height="wrap_content"
                             android:text="News Feed"
                             android:textSize="16dp"
-                            android:gravity="center"
                             android:textStyle="bold"
                             android:maxLines="2"
                             android:textColor="#fff"
@@ -87,15 +81,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="10dp"
                     >
-                        <Button
+                        <TextView
                             android:id="@+id/add"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Add to cart"
                             android:textSize="16sp"
-                            android:backgroundTint="#4CAF50"
+                            android:background="@drawable/addtocartbg"
+                            android:layout_margin="8dp"
+                            android:textColor="#fff"
+                            android:padding="5dp"
+                            android:textStyle="bold"
                             />
                 </LinearLayout>
 

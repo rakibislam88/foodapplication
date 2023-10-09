@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_marginBottom="5dp"
-    android:layout_height="wrap_content">
+    android:layout_height="100dp">
 
 
     <androidx.cardview.widget.CardView
@@ -24,24 +23,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:weightSum="2"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     >
                     <ImageView
                         android:id="@+id/item_close"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:src="@drawable/baseline_close_24"
                         app:tint="#fff" />
                     <ImageView
                         android:id="@+id/item_image"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
+                        android:scaleType="fitXY"
                         android:layout_marginLeft="10dp"
                         />
                 </LinearLayout>
@@ -60,6 +61,7 @@
                         android:textSize="18dp"
                         android:textColor="#fff"
                         android:maxLines="1"
+                        android:layout_marginBottom="10dp"
                         />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -75,9 +77,10 @@
                         android:text="ksjdkfdk"
                         android:textStyle="normal"
                         android:textSize="16dp"
+                        android:layout_marginLeft="0dp"
                         android:textColor="#fff"
                         />
-                    <LinearLayout
+                        <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -92,12 +95,12 @@
                             android:layout_weight="1"
                             android:src="@drawable/ic_baseline_remove_24"
                             app:tint="#fff" />
-                        <EditText
+                        <TextView
                             android:id="@+id/item_number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="0"
+                            android:text="1"
                             android:inputType="number"
                             android:textStyle="normal"
                             android:textSize="17dp"

@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginLeft="15dp"
-    android:layout_marginRight="15dp"
+    android:background="#000"
     tools:context=".CartFragment">
 
     <ScrollView
@@ -21,16 +20,21 @@
                 android:id="@+id/cartRecyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
                 ></androidx.recyclerview.widget.RecyclerView>
-        </LinearLayout>
-    </ScrollView>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
         android:gravity="center_vertical"
+        android:background="@drawable/total"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
         >
 
 
@@ -38,34 +42,110 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_weight="1"
+            android:layout_weight="2"
+            android:background="@drawable/bottom"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="10dp"
             >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Subtotal"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                 <TextView
+                        android:id="@+id/subtotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#FFC107"
+                        android:gravity="right"
+                        />
+            </LinearLayout>
+            </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_weight="2"-->
+<!--            android:paddingBottom="15dp"-->
+<!--            android:background="@drawable/bottom"-->
+<!--            >-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="left"-->
+<!--                android:layout_weight="1"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Delivery"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textColor="#fff"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_weight="1"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:id="@+id/delivery"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="0"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textColor="#FFC107"-->
+<!--                    android:gravity="right"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:paddingBottom="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:gravity="left"
-                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total: ৳"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:textColor="#fff"
-                    />
-                <EditText
-                    android:id="@+id/total"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="00"
+                    android:text="Total"
                     android:textStyle="bold"
                     android:textSize="18dp"
-                    android:textColor="#FFC107"
-                    android:layout_marginLeft="-1dp"
+                    android:textColor="#fff"
                     />
             </LinearLayout>
             <LinearLayout
@@ -73,20 +153,37 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1"
-                android:gravity="right"
                 >
-                <Button
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="check out"
+                    android:text="0"
                     android:textStyle="bold"
-                    android:textSize="16dp"
-                    android:textColor="#fff"
-                    android:backgroundTint="#4CAF50"
+                    android:textSize="18dp"
+                    android:textColor="#FFC107"
+                    android:gravity="right"
                     />
-
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 
+
+            <TextView
+                android:id="@+id/checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHECK OUT"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:padding="7dp"
+                android:background="@drawable/check"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

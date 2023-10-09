@@ -54,25 +54,21 @@ public class Model {
     public static void all(){
         ctArr =new ArrayList<>();
         ctItem("https://d1nfw7b4288zmf.cloudfront.net/shop/img/cover/villagepizzaburgerpastahalalbremen/af80ff61bac7ae4d.jpg", "Chicken Burger", "item description", "200", "2km","30-32min", "30g", "Add To Cart");
-        ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "Chicken Burger", "item description", "100", "2km","30-32min", "30g", "Add To Cart");
-        ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "Chicken Burger", "item description", "10", "2km","30-32min", "30g", "Add To Cart");
+        ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "cheese Burger", "item description", "100", "2km","30-32min", "30g", "Add To Cart");
+        ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "veggies  Burger", "item description", "10", "2km","30-32min", "30g", "Add To Cart");
         category("Burger", R.drawable.burger);
-
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "pizza", "item description", "100", "2km","30-32min", "30g", "Add To Cart");
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "pizza", "item description", "10", "2km","30-32min", "30g", "Add To Cart");
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "pizza", "item description", "10", "2km","30-32min", "30g", "Add To Cart");
         category("Pizza", R.drawable.pizza);
-
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "sallad", "item description",  "100", "2km","30-32min", "30g", "Add To Cart");
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "sallad", "item description", "10", "2km","30-32min", "30g", "Add To Cart");
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "sallad", "item description", "12", "2km","30-32min", "30g", "Add To Cart");
         category("Sallad", R.drawable.salad);
-
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "noodle", "item description", "12", "2km","30-32min", "30g", "Add To Cart");
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "noodle", "item description", "14", "2km","30-32min", "30g", "Add To Cart");
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "noodle", "item description", "15", "2km","30-32min", "30g", "Add To Cart");
         category("Noodle", R.drawable.noodles);
-
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "Rice", "item description", "15", "2km","30-32min", "30g", "Add To Cart");
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "Rice", "item description", "13", "2km","30-32min", "30g", "Add To Cart");
         ctItem("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80", "Rice", "item description", "23", "2km","30-32min", "30g", "Add To Cart");
